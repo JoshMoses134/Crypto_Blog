@@ -1,0 +1,548 @@
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+}
+a,button{
+    cursor: pointer;
+}
+body{
+    font-family: 'Tiro Devanagari Hindi', serif;
+font-family: 'Vollkorn', serif;
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    text-decoration: none;
+    font-size: 15px;
+    overflow-x: hidden;
+    background-color: black;
+    transition: 300ms ease-in-out;
+}
+.container{
+    width: 100vw;
+    height: 100%;
+    margin: 0;
+}
+.contain{
+    width: 100%;
+    height: 100vh;
+    background-image: url("C:/Users/jimwa/Documents/JS/shutterstock_1901605102.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.con-ul{
+    position: absolute;
+    background-color: #0C090A;
+    height: 270px;
+    width: 200px;
+    margin-left: -200px;
+    margin-top: 80px;
+    list-style: none;
+    padding-left: 0;
+    transition: 500ms ease-in;
+    transition-delay: 0.3s;
+}
+.ul-but button{
+    height: 100%;
+    width: 50px;
+}
+.con-ul li{
+    padding-left: 0;
+    height: 40px;
+    width: 100%;
+    margin-left: 0;
+    display: flex;
+    justify-content: center;
+}
+.con-ul li:hover{
+    color: white;
+}
+.li-c{
+    color: #DAEE01;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+.li-c:hover{
+    color: white;
+}
+html::-webkit-scrollbar-track{
+    background-color: gray;
+    width: 5px;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: black;
+}
+html::-webkit-scrollbar{
+    width: 7px;
+    border-radius: 3px;
+}
+.con1{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.nav{
+    width: 100vw;
+    background-color: transparent;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.nav-left{
+    width: 250px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+.op-div{
+    height: 100%;
+    width: 60px;
+    padding-top: 20px;
+}
+.op{
+    height: 40px;
+    width: 50px;
+
+}
+.nav-left h3{
+    padding-top: 10px;
+    color: white;
+    font-weight: 800;
+    font-family:'Vollkorn';
+    text-align: center;
+}
+.nav-middle{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    display: none;
+}
+.nav-middle a{
+    color: #DAEE01;
+    font-family: 'Merriweather';
+    font-size: 18px;
+    width: 20%;
+    height: 100%;
+    padding-top: 30px;
+    text-align: center; 
+}
+.nav-middle a:hover{
+    background-color: #0C090A;
+}
+.nav-right{
+    width: 35%;
+    height: 100%;
+    padding-top: 20px;
+    
+}
+.nav-right1{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    background-color: #0C090A;
+    border: gray solid;
+    border-width: 2px;
+    border-radius: 5px;
+}
+.nav-right input{
+    padding-top: 0;
+    width: 90%;
+    height: 40px;
+    color: white;
+    background-color: transparent;
+    border-color: transparent;
+    
+}
+.nav-right input::placeholder{
+    font: inherit;
+    font-family:'Merriweather';
+}
+.nav-right input:focus{
+    border-style: none;
+    border-color: transparent;
+    outline-style: none;
+    
+}
+.nav-right button{
+    height: 35px;
+    width: 20%;
+    background-color: transparent;
+    border-color: transparent;
+}
+input[placeholder="Search"]::-ms-value{
+    font-size: 15px;
+}
+.search i{
+    font-size: 20px;
+    color: #413839;
+}
+.main{
+    width: 100%;
+    height: 70vh;
+    padding-left: 30px;
+    padding-top: 159px;
+
+}
+.main1{
+    width: 70%;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+.main-h4{
+    padding: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.main-h4 button{
+    background-color: transparent;
+    border-color: transparent;
+    width: 100%;
+    height: 80%;
+}
+.main-h4 h4{
+    color: white;
+    margin-top: 0;
+    width: 70%;
+    text-align: center;
+    height: 100%;
+    padding-top: 13px;
+    border-radius: 5px;
+    border-color: transparent;
+    background-color: black;
+}
+.main1 p{
+    font-size: 25px;
+    font-weight: 900;
+    text-align: center;
+    color: gold;
+}
+.popular-news{
+    background-color: #413839;
+    width: 100%;
+    height: 420vh;
+    padding: 30px 10%;
+}
+.p-p{
+    color: white;
+    font-weight: 600;
+}
+.popu{
+    height: 400vh;
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.p-sec1, .p-sec2, .p-sec3, .p-sec4, .p-sec5,.p-sec6{
+    width: 75%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+.p-sec2, .p-sec3, .p-sec4, .p-sec5,.p-sec6{
+    margin-top: 30px;
+}
+.p-sec1-div, .p-sec2-div, .p-sec3-div, .p-sec4-div, .p-sec5-div, .p-sec6-div{
+    height: 300px;
+    width: 100%;
+}
+.popu img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.popu img:hover{
+    box-shadow: 0 5px 15px black,
+                0 5px 10px;
+    transition: 300ms ease-out;
+}
+.p-sec1-text,.p-sec2-text,.p-sec3-text,.p-sec4-text, .p-sec5-text, .p-sec6-text{
+    height: 150px;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.popu button{
+    background-color: black;
+    border-radius: 5px;
+}
+.popu p{
+    text-align: justify;
+    font-weight: 700;
+    color: white;
+    word-wrap: break-word;
+}
+.div-1 a, .div-2 a, .div-3 a, .div-4 a, .div-5 a, .div-6 a{
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+#i:hover{
+    color: #DAEE01;
+}
+.hr1, .hr2, .hr3, .hr4, .hr5, .hr6{
+    margin: 0;
+}
+.more{
+    text-decoration: none;
+    color: #DAEE01;
+}
+footer{
+    height: 120%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(170deg, #0C090A,#3A3B3C, #413839);
+}
+.sub{
+    height: 300px;
+    width: 100%;
+    background-image: url("C:/Users/jimwa/Downloads/blockchain-3440455.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sub h3{
+    font-family: 'Merriweather';
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    font-size: 23px;
+    
+}
+.form{
+    height: 200px;
+    width: 80%;
+    background-color:#3A3B3C;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    opacity: 0.95;
+    filter: alpha(opacity=95);
+    box-shadow: 0px 3px 5px black;
+}
+.form input{
+    height: 40px;
+    width: 100%;
+    border-radius: 10px;
+
+}
+.form input:focus{
+    outline-style: none;
+    border-style: none;
+    border-color: transparent;
+    border-bottom: white solid 1px;
+}
+input[name="email"]::placeholder{
+    color: white;
+    font-family:"Merriweather";
+}
+input[name="email"]{
+    background-color: transparent;
+    border-style: none;
+    border-color: none;
+    border-radius: 0;
+    color: white;
+    border-bottom: #0C090A solid 2px;
+}
+input[name="email"]:focus{
+    background-color: black;
+    border-bottom: white solid 2px;
+    transition: 300ms ease-out;
+}
+.form hr{
+    background-color: black;
+}
+input[name="submit"]{
+    background-image: linear-gradient(60deg, #9DC209, #6CC417, #16F529);
+    margin-top: 10px;
+    font-family:"Merriweather";
+    color: white;
+    border-style: solid;
+    border-radius: 5px;
+    border-color: transparent;
+    font-weight: 600;
+    font-size: 18px;
+    width: 80%;
+}
+input[name="submit"]:hover{
+    cursor:pointer;
+}
+.foot1{
+    height:50vh;
+    width: 100%;
+}
+.foot1 h3{
+    padding-top: 0px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-weight: 300;
+    font-size: 18px;
+
+}
+.foot1 ul{
+    list-style:circle;
+    padding: none;
+}
+.foot1 hr{
+    width: 80%;
+    padding: 0 30px;
+    color: #3A3B3C;
+}
+.foot1 li{
+    text-align: start;
+    height: 40px;
+    margin-top: 20px;
+}
+.li-a{
+    text-align: start;
+    margin-top: 10px;
+    color: gold;
+    font-size: 13px;
+}
+.li-a:hover{
+    color: white;
+}
+.foot2{
+    margin-top: 30px;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+}
+.foot-icons{
+    width: 50%;
+    border: red solid;
+}
+.foot2 h3{
+    color: white;
+    height: 100%;
+}
+.list{
+    display: flex;
+    flex-direction: row;
+}
+.list ol{
+    margin-left: 30px;
+    list-style:circle;
+}
+.ol-a{
+    text-decoration: none;
+    color: gold;
+}
+@media screen and (min-width:880px) and (max-width:992px) {
+    .con-ul{
+        display: none;
+    }
+    .op-div{
+        display: none;
+    }
+    .main-h4{
+        padding: 0 60px;
+    }
+    .nav{
+        justify-content: space-around;
+        padding-right: 20px;
+    }
+    .nav-middle{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .main-h4 h4{
+        width: 50%;
+    }
+    .popu{
+        padding: 0;
+        align-items: flex-start;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 200vh;
+        justify-content: center;
+    }
+    .popular-news{
+        padding: 30px 10px;
+    }
+    .p-sec1, .p-sec2, .p-sec3, .p-sec4, .p-sec5,.p-sec6{
+        width: 350px;
+        height: 400px;
+        margin-top: 0;
+    }
+    
+    .p-sec1, .p-sec2, .p-sec3, .p-sec4, .p-sec5,.p-sec6{
+        margin-left: 20px;
+    }
+    .popular-news{
+        height: 220vh;
+    }
+}
+@media screen and (min-width:993px) {
+    .con-ul{
+        display: none;
+    }
+    .op-div{
+        display: none;
+    }
+    .main-h4{
+        padding: 0 80px;
+    }
+    .nav{
+        justify-content: space-around;
+        padding-right: 20px;
+    }
+    .nav-middle{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .popu{
+        padding: 0;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 120vh;
+    }
+    .popular-news{
+        padding: 30px 5%;
+    }
+    .p-sec1, .p-sec2, .p-sec3, .p-sec4, .p-sec5,.p-sec6{
+        width: 330px;
+        height: 400px;
+        margin-top: 0;
+    }
+    .p-sec1, .p-sec2, .p-sec3, .p-sec4, .p-sec5,.p-sec6{
+        margin-left: 20px;
+    }
+    .popular-news{
+        height: 150vh;
+    }
+    .form{
+        width: 50%;
+    }
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\jimwa\Documents\EFALA\contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&family=Vollkorn&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <title>Contact</title>
+</head>
+<body>
+    <div class="contain">
+        <ul class="con-ul" id="con-ul">
+            <li><div class="ul-but"><button onclick="Close()">CL</button></div></li><hr>
+            <li><a class="li-c" href="C:\Users\jimwa\Documents\EFALA\Home.html" target="_blank">Home</a></li><hr>
+            <li><a class="li-c" href="C:\Users\jimwa\Documents\EFALA\Blog.html" target="_blank">Blog</a></li><hr>
+            <li><a class="li-c" href="C:\Users\jimwa\Documents\EFALA\Blog.html" target="_blank">About Us</a></li><hr>
+            <li><a class="li-c" href="C:\Users\jimwa\Documents\EFALA\contact.html">Contact</a></li>
+        </ul>
+        <div class="nav">
+            <div class="nav-left">
+                <h3> CRYPTO INIT</h3>
+                <div class="op-div"><button class="op" onclick="Open()">OP</button></div>
+            </div>
+            <div class="nav-middle">
+                <a href="C:\Users\jimwa\Documents\EFALA\Home.html" target="_blank">Home</a>
+                <a href="C:\Users\jimwa\Documents\EFALA\Blog.html" target="_blank">Blog</a>
+                <a href="C:\Users\jimwa\Documents\EFALA\About Us.html" target="_blank">About Us</a>
+                <a href="C:\Users\jimwa\Documents\EFALA\contact.html" target="_blank">Contact</a>
+            </div>
+            <div class="nav-right">
+                <div class="nav-right1">
+                    <input type="search" placeholder="Search">
+                    <button class="search"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="main">     
+            <div class="main-text">
+                <img class="m-img" src="C:\Users\jimwa\Downloads\btc-6272696_1920.jpg" alt="">
+                <div class="m-t">
+                    <h2>GET IN TOUCH WITH US</h2>
+                    <p>You can also follow us in our social media handle. We will always bring to the latest and also guide you on what you need too know concerning cryptocurrency.</p>
+                    <ul>
+                        <li>Whatsapp</li>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+        <footer>
+            <div class="sub">
+                <h3>Subscibe To Get Latest. Start Investing</h3>
+                <form action="" class="form">
+                    <input type="email" placeholder="Email" name="email">
+                    <input type="submit" name="submit" value="Subscribe">
+                </form>
+            </div>
+            <div class="foot1">
+                <h3>Quick links</h3><hr>
+                <div class="list">
+                    <ul>
+                        <li><a class="li-a" href="C:\Users\jimwa\Documents\EFALA\Home.html" target="_blank">Home</a></li>
+                        <li><a class="li-a" href="C:\Users\jimwa\Documents\EFALA\Blog.html" target="_blank">Blog</a></li>
+                        <li><a class="li-a" href="C:\Users\jimwa\Documents\EFALA\About Us.html" target="_blank">About Us</a></li>
+                        <li><a class="li-a" href="C:\Users\jimwa\Documents\EFALA\contact.html">Contact</a></li>
+                    </ul>
+                    <ol class="ol">
+                        <li><a class="ol-a" href="">Facebook</a></li>
+                        <li><a class="ol-a" href="">Twitter</a></li>
+                        <li><a class="ol-a" href="">Instagram</a></li>
+                    </ol>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+<script>
+    function Open(){
+        var d= document.getElementById("con-ul");
+        d.style.marginLeft= "0px";
+    }
+    function Close(){
+        var e = document.getElementById("con-ul");
+        e.style.marginLeft="-200px";
+    }
+</script>
